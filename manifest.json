@@ -1,0 +1,40 @@
+{
+  "name": "DOM-events",
+  "version": "1.0.0",
+  "title": "DOM Events",
+  "author": {
+    "name": "Andrii Vorobiov",
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "highcharts": "^4.2.3"
+  },
+  "type": "",
+  "description": "Binds DOM events to Highcharts elements.",
+  "keywords": [
+    "events",
+    "contextmenu",
+    "right-click"
+  ],
+  "homepage": "https://github.com/Koorosh/dom-events",
+  "docs": "https://github.com/Koorosh/dom-events/blob/master/README.md",
+  "bugs": "",
+  "download": "",
+  "demo": [
+    "",
+    ""
+  ],
+  "maintainers": [
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    }
+  ]
+}
