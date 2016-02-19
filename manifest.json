@@ -1,6 +1,6 @@
 {
   "name": "DOM-events",
-  "version": "1.0.2",
+  "version": "1.1.2",
   "title": "DOM Events",
   "author": {
     "name": "Andrii Vorobiov",
@@ -20,11 +20,15 @@
   "description": "Binds DOM events to Highcharts elements.",
   "keywords": [
     "events",
-    "mousewheel",
+    "mouse wheel",
     "wheel",
-    "contextmenu",
-    "right-click"
+    "context menu",
+    "right-click",
+    "double click"
   ],
   "homepage": "https://github.com/Koorosh/dom-events",
-  "docs": "https://github.com/Koorosh/dom-events/blob/master/README.md"
+  "docs": "https://github.com/Koorosh/dom-events/blob/master/README.md",
+  "demo": [
+    "https://jsfiddle.net/koorosh/fedjx1rw/"
+  ]
 }
