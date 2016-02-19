@@ -1,5 +1,7 @@
+'use strict';
 (function (H, $) {
     var fireEvent = H.fireEvent;
+
     H.wrap(H.Pointer.prototype, 'init', function (proceed) {
         proceed.apply(this, Array.prototype.slice.call(arguments, 1));
 
@@ -12,9 +14,15 @@
             e.preventDefault();
             return false;
         };
+
+        container.onwheel = function (e) {
+            pointer.onWheel(e);
+            e.stopPropagation();
+            e.preventDefault();
+        };
     });
 
-    if(!H.Pointer.prototype.hasOwnProperty("onContainerContextMenu")) {
+    if(!H.Pointer.prototype.hasOwnProperty('onContainerContextMenu')) {
         H.Pointer.prototype.onContainerContextMenu = function (e) {
             var pointer = this,
                 chart = pointer.chart,
@@ -44,6 +52,22 @@
                     }
                 }
             }
-        }
+        };
+    }
+
+    if(!H.Pointer.prototype.hasOwnProperty('onWheel')) {
+        H.Pointer.prototype.onWheel = function (e) {
+            var pointer = this,
+                chart = pointer.chart,
+                plotLeft = chart.plotLeft,
+                plotTop = chart.plotTop;
+
+            e = this.normalize(e);
+
+            $.extend(e, this.getCoordinates(e));
+            if (chart.isInsidePlot(e.chartX - plotLeft, e.chartY - plotTop)) {
+                fireEvent(chart, 'wheel', e);
+            }
+        };
     }
 }(Highcharts, jQuery));
