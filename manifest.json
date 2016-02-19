@@ -1,10 +1,10 @@
 {
   "name": "DOM-events",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "DOM Events",
   "author": {
     "name": "Andrii Vorobiov",
-    "url": ""
+    "url": "https://github.com/Koorosh"
   },
   "licenses": [
     {
@@ -23,18 +23,5 @@
     "right-click"
   ],
   "homepage": "https://github.com/Koorosh/dom-events",
-  "docs": "https://github.com/Koorosh/dom-events/blob/master/README.md",
-  "bugs": "",
-  "download": "",
-  "demo": [
-    "",
-    ""
-  ],
-  "maintainers": [
-    {
-      "name": "",
-      "email": "",
-      "url": ""
-    }
-  ]
+  "docs": "https://github.com/Koorosh/dom-events/blob/master/README.md"
 }
