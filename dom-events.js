@@ -11,15 +11,10 @@
 
         container.oncontextmenu = function (e) {
             pointer.onContainerContextMenu(e);
-            e.stopPropagation();
-            e.preventDefault();
-            return false;
         };
 
         container.onwheel = function (e) {
             pointer.onWheel(e);
-            e.stopPropagation();
-            e.preventDefault();
         };
 
         // Override default click event handler by adding delay to handle double-click event
